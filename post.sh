@@ -57,5 +57,13 @@ cp -r ~/Dotfiles/.config/rofi/ ~/.config/rofi
 cp -r ~/Dotfiles/.config/VSCodium/ ~/.config/VSCodium
 cp -r ~/Dotfiles/.config/zsh/ ~/.config/zsh/
 cp -r ~/Dotfiles/.local/share/bin/ ~/.local/share/bin
+mkdir ~/Media
+mv ~/Downloads ~/Media/dl
+mv ~/Documents ~/Media/doc
+mv ~/Music ~/Media/mus
+mv ~/Pictures ~/Media/pic
+mv ~/Videos ~/Media/vid
+mv ~/Templates ~/.local
+mv ~/Public ~/.local
 echo 'Install NVOID'
 bash -c "$(curl -s https://raw.githubusercontent.com/ysfgrgO7/nvoid/main/.github/NVOID-Install.sh)"
