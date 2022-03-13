@@ -6,3 +6,4 @@ git clone https://github.com/ysfgrgO7/post-install
 cd post-install
 ./post-install.sh
 ```
+>make sure that your not logged in as root because the script won't work
