@@ -28,3 +28,8 @@ it clones the repo and run the `install.sh` which install some build dependencie
 ### Install Nvoid
 it runs the [nvoid installer](https://github.com/nvoid-lua/nvoid#install-in-one-command)
 >say `yes` or `y` to the questions in the installer
+
+then it creates a custom config for it to set the catppuccin theme
+
+### Choose The wallpaper When nitrogen opens
+Clone the wallpapers repo then opens it in nitrogen to choose the wallpaper

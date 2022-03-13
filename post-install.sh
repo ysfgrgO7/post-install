@@ -53,7 +53,19 @@ echo '################ Say YES to the QUESTIONS ################'
 echo '##########################################################'
 echo '##########################################################'
 bash -c "$(curl -s https://raw.githubusercontent.com/ysfgrgO7/nvoid/main/.github/installer.sh)"
+mkdir ~/.config/nvim/lua/custom/
+cd ~/.config/nvim/lua/custom
+touch ~/.config/nvim/lua/custom/nvoidrc.lua
+cd ~/.config/nvim/lua/custom/
+cat > nvoidrc.lua <<EOF
+local M = {}
+M.ui = {
+  	theme = "catppuccin", -- "catppuccin" "classic-dark" "nord" "onedark" "solarized" "tokyodark" "uwu"
+}
+return M
+EOF
 ## Launch nitrogen and Set a wallpaper
+git clone https://github.com/ysfgrgO7/Wallpapers ~/Wallpapers
 clear
 echo '###################################################'
 echo '###################################################'
