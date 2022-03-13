@@ -1,0 +1,2 @@
+# Post Install
+A bash script that install [My Suckless](https://github.com/ysfgrgO7/Suckless) programs with it's dependencies and [Dotfiles]()
