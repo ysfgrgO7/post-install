@@ -12,7 +12,7 @@ cd post-install
 ```
 >make sure that your not logged in as root because the script won't work
 ## What does it do?
-### Install Dependencies
+### Install Dependencies and Fonts
 #### the script installs 
 1. git
 1. curl
@@ -23,6 +23,9 @@ cd post-install
 1. nitrogen
 1. ranger
 1. zsh
+#### Fonts
+1. Jetbrains Mono Nerd Fonts
+1. Material Fonts
 ### Install Dotfiles
 the script just installs the files for ranger, picom, zsh
 ### Install Suckless
