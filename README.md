@@ -1,4 +1,6 @@
 # Post Install
+![post-install](https://user-images.githubusercontent.com/94284073/158056122-7bc9aeaa-b426-445b-934a-054daf368819.png)
+
 A bash script that install [My Suckless](https://github.com/ysfgrgO7/Suckless) programs with it's dependencies and [Dotfiles](https://github.com/ysfgrgO7/Dotfiles), also installs [Nvoid](https://github.com/nvoid-lua/nvoid)
 
 >Note: It only works for arch and gnu/void linux and their distributions
