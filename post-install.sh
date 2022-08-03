@@ -52,7 +52,7 @@ echo '##########################################################'
 echo '################ Say YES to the QUESTIONS ################'
 echo '##########################################################'
 echo '##########################################################'
-bash -c "$(curl -s https://raw.githubusercontent.com/ysfgrgO7/nvoid/main/.github/installer.sh)"
+bash <(curl -s https://raw.githubusercontent.com/nvoid-lua/nvoid/main/scripts/installer.sh)
 
 ## Installing lfetch
 clear
@@ -63,13 +63,3 @@ echo 'lfetch' >> ~/.config/zsh/zsh-exports
 
 ## Removing extra directory
 rm -rf ~/post_installer/
-
-## Launch nitrogen and Set a wallpaper
-clear
-git clone https://github.com/ysfgrgO7/Wallpapers ~/Wallpapers
-clear
-echo '#########################################################################'
-echo '#########################################################################'
-echo '###### Chose A Wallpaper by runnig the cmd `nitrogen ~/Wallpapers` ######'
-echo '#########################################################################'
-echo '#########################################################################'
