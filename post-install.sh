@@ -29,8 +29,8 @@ fi
 ## Install Dotfiles
 clear
 echo '#### Installing Dotfiles and fonts ####'
-git clone https://github.com/ysfgrgO7/Dotfiles.git ~/post_installer/Dotfiles
-~/post_installer/Dotfiles/install.sh
+git clone https://github.com/ysfgrgO7/Dotfiles.git ~/Dotfiles
+~/Dotfiles/install.sh
 
 ## Installing fonts
 clear
