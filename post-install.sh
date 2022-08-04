@@ -20,10 +20,10 @@ clear
 echo '#### Installing deps ####'
 if command -v pacman &> /dev/null
 then
-  sudo pacman -Syu --needed git curl neovim nodejs npm python-pip picom nitrogen ranger zsh exa stylua
+  sudo pacman -Syu --needed git curl neovim nodejs npm python-pip nitrogen ranger zsh exa cargo
 elif command -v xbps-install &> /dev/null
 then
-  sudo xbps-install -Syu git curl neovim nodejs python3-pip picom nitrogen ranger zsh exa stylua
+  sudo xbps-install -Syu git curl neovim nodejs python3-pip nitrogen ranger zsh exa cargo
 fi
 
 ## Install Dotfiles
@@ -35,6 +35,7 @@ git clone https://github.com/ysfgrgO7/Dotfiles.git ~/Dotfiles
 ## Installing fonts
 clear
 cp -r ~/post-install/fonts/ ~/.local/share/fonts/post-fonts
+rm -f ~/Dotfiles
 
 ## Installing Suckless
 clear
