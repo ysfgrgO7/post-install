@@ -64,10 +64,14 @@ sudo systemctl enable sddm
 cd ~/.post_install
 git clone https://github.com/ysfgrgO7/Dotfiles
 cp -r ~/.post_install/Dotfiles/ranger/ ~/.config/
-cp -r ~/.post_install/Dotfiles/zshrc ~/.zshrc
 cp -r ~/.post_install/Dotfiles/user-dirs.dirs ~/.config/
 cp -r ~/.post_install/Dotfiles/alacritty/ ~/.config/
+cp -r ~/.post_install/Dotfiles/awesome/ ~/.config/
+cp -r ~/.post_install/Dotfiles/river/ ~/.config/
+cp -r ~/.post_install/Dotfiles/wofi/ ~/.config/
+cp -r ~/.post_install/Dotfiles/rofi/ ~/.config/
 cp -r ~/.post_install/Dotfiles/bin/ ~/.local/share/bin
+cp -r ~/.post_install/Dotfiles/zshrc ~/.zshrc
 
 mkdir ~/Media
 mv ~/Downloads ~/Media/dl
@@ -84,14 +88,13 @@ git clone https://github.com/ysfgrgO7/lfetch.git
 cd lfetch
 sudo make install
 
-# Waybar
-rm -rf ~/.config/hypr/
-git clone https://github.com/ysfgrgO7/wayland-config ~/.config/hypr/
-
 # Nvoid
 bash <(curl -s https://raw.githubusercontent.com/nvoid-lua/nvoid/main/utils/installer/install.sh)
 
 rm -rf ~/.post_install/
+mkdir ~/git
+cd ~/git/
+git clone https://github.com/ysfgrgO7/Dotfiles
 
 while true; do
 	read -p "Do you want to reboot? [Y/n] " yn
