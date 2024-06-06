@@ -38,23 +38,14 @@ sudo fc-cache -fv
 cd ~/.post_install
 
 # Install Paru
-if command -v paru &>/dev/null; then
-	echo "You Have Paru"
-else
-	sudo pacman -S --needed base-devel
-	git clone https://aur.archlinux.org/paru.git
-	cd paru
-	makepkg -si
-fi
-cd ~/.post_install
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
 
 # Install Dependencies
-if command -v pacman &>/dev/null; then
-	sudo pacman -Syu --noconfirm --needed git zsh fzf exa alacritty waybar hyprland rofi swaybg neovim python-pip python-pynvim nodejs npm yarn ranger lua lua51
-	paru -S --needed --noconfirm brave-bin sddm-git
-else
-	echo "Only works with ARCH"
-fi
+sudo pacman -Syu --noconfirm --needed base-devel cmake fd ripgrep git zsh fzf exa alacritty rofi neovim python-pip python-pynvim nodejs npm yarn ranger lua lua51
+paru -S --needed --noconfirm awesome-git brave-bin sddm-git
 
 # SDDM
 sudo systemctl disable $(grep '/usr/s\?bin' /etc/systemd/system/display-manager.service | awk -F / '{print $NF}')
@@ -68,7 +59,6 @@ cp -r ~/.post_install/Dotfiles/user-dirs.dirs ~/.config/
 cp -r ~/.post_install/Dotfiles/alacritty/ ~/.config/
 cp -r ~/.post_install/Dotfiles/awesome/ ~/.config/
 cp -r ~/.post_install/Dotfiles/river/ ~/.config/
-cp -r ~/.post_install/Dotfiles/wofi/ ~/.config/
 cp -r ~/.post_install/Dotfiles/rofi/ ~/.config/
 cp -r ~/.post_install/Dotfiles/bin/ ~/.local/share/bin
 cp -r ~/.post_install/Dotfiles/zshrc ~/.zshrc
@@ -89,8 +79,6 @@ cd lfetch
 sudo make install
 
 # Nvoid
-bash <(curl -s https://raw.githubusercontent.com/nvoid-lua/nvoid/main/utils/installer/install.sh)
-
 rm -rf ~/.post_install/
 mkdir ~/git
 cd ~/git/
