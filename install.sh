@@ -44,7 +44,7 @@ cd paru
 makepkg -si
 
 # Install Dependencies
-sudo pacman -Syu --noconfirm --needed base-devel cmake fd ripgrep git zsh fzf exa alacritty rofi neovim python-pip python-pynvim nodejs npm yarn ranger lua lua51
+sudo pacman -Syu --noconfirm --needed base-devel cmake fd ripgrep git zsh fzf exa alacritty kitty rofi neovim python-pip python-pynvim nodejs npm yarn ranger lua lua51
 paru -S --needed --noconfirm awesome-git brave-bin sddm-git
 
 # SDDM
@@ -57,6 +57,7 @@ git clone https://github.com/ysfgrgO7/Dotfiles
 cp -r ~/.post_install/Dotfiles/ranger/ ~/.config/
 cp -r ~/.post_install/Dotfiles/user-dirs.dirs ~/.config/
 cp -r ~/.post_install/Dotfiles/alacritty/ ~/.config/
+cp -r ~/.post_install/Dotfiles/kitty/ ~/.config/
 cp -r ~/.post_install/Dotfiles/awesome/ ~/.config/
 cp -r ~/.post_install/Dotfiles/river/ ~/.config/
 cp -r ~/.post_install/Dotfiles/rofi/ ~/.config/
